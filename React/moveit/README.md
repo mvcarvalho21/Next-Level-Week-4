@@ -1,17 +1,3 @@
-# Next Level Week 4 - 22/02/2021
-
-Na primeira webnair da NLW 4 com o Diego Fernandes, fui apresentado ao React de uma forma diferente na qual vinha estudando. As ideias pareceram mais leves, a didática ajuda bastante, mas o principal ponto é o foco da aplicação na qual está sendo realizada. 
-
-* Comecei a utilizar Yarn, o que agiliza o projeto se comparado ao NPM;
-* Fui apresentado também ao typescript;
-* Aprendi a organizar melhor as aplicações do projeto, principalmente no que diz respeito ao CSS.
-* Estou aprendendo a melhorar o Readme com as TAG's reais. Fica muito mais profissional.
-
-### Ainda preciso aprender melhor os conceitos de rem, não ficaram muito claros.
-### Preciso dar mais foco no aprendizado de typescript, pois isso vai ajudar muito nas minhas aplicações.
-
----
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
