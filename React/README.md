@@ -29,14 +29,46 @@ No segundo dia da NLW 4 aprendi os conceitos do Next.JS, que é utilizado para s
 * SSR - Server-side Rendering - Solução para o problema do react
 * SSG - Static-side Generation - Solução para uma página estática que resolve o problema de várias requisições iguais
 
-*Para instalar typescript no projeto: yarn add typescript @types/react @types/react-dom @types/node -D*
-*Para iniciar o servidor em projetos Next.JS - yarn dev*
+**Para instalar typescript no projeto:**
+```javascript
+yarn add typescript @types/react @types/react-dom @types/node -D
+```
+
+**Para iniciar o servidor em projetos Next.JS:**
+```javascript
+yarn dev
+```
 
 * Pasta _app.tsx - local onde ficam armazenadas as coisas que se repetem durante todo o projeto (ex: cabeçalho, rodapé, fontes...)
 * Pasta _document.tsx - Pasta que deve ser criada para inserir informações que por padrão ficam na pasta _app.tsx, porém dessa forma o document carrega o arquivo uma unica vez para o usuário, fica tudo o que é estático (Essa pasta deve ser copiada de qualquer projeto, pois as informações são padrões).
 
-Nota: durante o projeto, no componente Countdown, foi utilizada a sintaxe *const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');*
+Nota: durante o projeto, no componente Countdown, foi utilizada a sintaxe ```javascript const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');```
 Nessa sintaxe, o split serve para dividir a String em duas partes e o padStart significa que quando não houver 2 dígitos, ele coloca um zero no primeiro dígito.
 
 ### Estudar mais CSS - No Discovery da RocketSeat .
-### Dar um foco maior em flex (porque sempre 1?).
+### Dar um foco maior em flex - porque sempre 1?
+
+---
+
+## Dia 24/02/2021 - Contexto e Componentes
+
+Terceiro webnair da NLW 4 com o Diego Fernandes: 
+
+* Noções de Timeout com Javascript:
+
+```javascript
+let countdownTimeout: NodeJS.Timeout;
+```
+
+* Flex: 1 = Ocupa a altura máxima da div
+
+* Reforcei os conceitos de Context API;
+* Aprendi calculos utilizando a biblioteca Math (random, floor, pow, round);
+* Criei um contexto para a aplicação
+* Utilizei a interpolação com mais frequência
+* Integrei um arquivo JSON a aplicação para utilização de dados
+
+### Melhorar os conceitos de Context API e menos Redux
+### Entender melhor os conceitos de Provider, Interface e Children
+
+---
