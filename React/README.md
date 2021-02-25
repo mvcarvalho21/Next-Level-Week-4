@@ -42,7 +42,11 @@ yarn dev
 * Pasta _app.tsx - local onde ficam armazenadas as coisas que se repetem durante todo o projeto (ex: cabeçalho, rodapé, fontes...)
 * Pasta _document.tsx - Pasta que deve ser criada para inserir informações que por padrão ficam na pasta _app.tsx, porém dessa forma o document carrega o arquivo uma unica vez para o usuário, fica tudo o que é estático (Essa pasta deve ser copiada de qualquer projeto, pois as informações são padrões).
 
-Nota: durante o projeto, no componente Countdown, foi utilizada a sintaxe ```javascript const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');```
+Nota: durante o projeto, no componente Countdown, foi utilizada a sintaxe 
+```javascript 
+const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
+```
+
 Nessa sintaxe, o split serve para dividir a String em duas partes e o padStart significa que quando não houver 2 dígitos, ele coloca um zero no primeiro dígito.
 
 ### Estudar mais CSS - No Discovery da RocketSeat .
@@ -70,5 +74,32 @@ let countdownTimeout: NodeJS.Timeout;
 
 ### Melhorar os conceitos de Context API e menos Redux
 ### Entender melhor os conceitos de Provider, Interface e Children
+
+---
+
+## Dia 25/02/2021 - Melhorando a usabilidade da aplicação
+
+Quarto webnair da NLW 4 com o Diego Fernandes: 
+
+* useEffect com array de dependências vazio: irá executar a função uma única vez durante a execução da aplicação
+
+```javascript
+useEffect(() => {}, [])
+```
+* Permissão para notificações:
+
+```javascript
+useEffect(() => {
+    Notification.requestPermission();
+  }, [])
+```
+
+*Flex: 1 = Ocupa a altura máxima da div*
+
+* Aprendi conceitos de alert, customização e inclusão de sons;
+* Novas informações sobre o useEffect
+* Nova aplicação do Context API
+
+### Estudar mais afundo CSS - Ainda tenho muitos conceitos a digerir
 
 ---
