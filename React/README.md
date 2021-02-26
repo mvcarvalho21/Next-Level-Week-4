@@ -64,7 +64,7 @@ Terceiro webnair da NLW 4 com o Diego Fernandes:
 let countdownTimeout: NodeJS.Timeout;
 ```
 
-* Flex: 1 = Ocupa a altura máxima da div
+*Flex: 1 = Ocupa a altura máxima da div*
 
 * Reforcei os conceitos de Context API;
 * Aprendi calculos utilizando a biblioteca Math (random, floor, pow, round);
@@ -94,12 +94,63 @@ useEffect(() => {
   }, [])
 ```
 
-*Flex: 1 = Ocupa a altura máxima da div*
-
 * Aprendi conceitos de alert, customização e inclusão de sons;
 * Novas informações sobre o useEffect
 * Nova aplicação do Context API
 
 ### Estudar mais afundo CSS - Ainda tenho muitos conceitos a digerir
+
+---
+
+## Dia 26/02/2021 - Próximo Nível com React
+
+Quinto webnair da NLW 4 com o Diego Fernandes: 
+
+* Cookies: Serve para armazenar informações no navegador. Idela para Next.JS. Para incluir a biblioteca cookie:
+
+```javascript
+yarn add js-cookie
+```
+* Algumas bibliotecas JS não mostram as typagens em projetos typescript. Isso é indicado pelos "..." na importação. Nesses casos, deve-se adicionar pacotes para as dependencias utilizadas. No nosso exemplo, deve-se instalar:
+
+```javascript
+yarn add @types/js-cookie -D
+```
+
+* Comando para armazenar informações nos cookies:
+
+```javascript
+useEffect(() => {
+    Cookies.set('level', String(level));
+    Cookies.set('currentExperience', String(currentExperience));
+    Cookies.set('challengesCompleted', String(challengesCompleted));
+  }, [level, currentExperience, challengesCompleted]);
+```
+
+* Para as informações serem mantidas na página após atualização da mesma, deve-se inserir o comando abaixo na index da pasta pages.
+
+```javascript
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    props: {}
+  }
+}
+```
+
+* Aprendi a utilizar os cookies do navegador para salvar informações
+* ...rest pega todo o restante da interface que eu quero, sem precisar duplicar
+* Nova aplicação do Context API
+* Utilização de Modal
+* Deploy da aplicação especifico para front-end
+
+Ferramentas para Deploy:
+
+* Netlify
+* Vercel
+
+*Instalar a Vercel CLI: npm i -g vercel*
+
+### Novas ideias:
+*Adaptar o app para inserir style componentes e treinar com os cursos da Alura, tentar transformar em um App Mobile, tentar inserir uma tela de Login(integrando com o back-end) - considerar alguem do flowtalents para interagir*
 
 ---
