@@ -150,6 +150,15 @@ Ferramentas para Deploy:
 
 *Instalar a Vercel CLI: npm i -g vercel*
 
+### Sugestões Diego para o Next Level:
+*- Documentação*
+*- Melhorar estilização do APP*
+*- Responsividade para mobile*
+*- Temas (dark)*
+*- Login - oauth com github*
+
+Layout figma: https://www.figma.com/file/vRbW1u0CEZuG2zE6bU5qLg/?viewer=1&node-id=
+
 ### Novas ideias:
 *Adaptar o app para inserir style componentes e treinar com os cursos da Alura, tentar transformar em um App Mobile, tentar inserir uma tela de Login(integrando com o back-end) - considerar alguem do flowtalents para interagir*
 
